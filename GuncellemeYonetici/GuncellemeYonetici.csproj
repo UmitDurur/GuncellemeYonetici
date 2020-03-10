@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CDD5E253-E63E-451A-913A-D2EE94804193}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GuncellemeYonetici</RootNamespace>
+    <AssemblyName>GuncellemeYonetici</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bilesenler.cs" />
+    <Compile Include="flowVersiyonlar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="flowVersiyonlar.Designer.cs">
+      <DependentUpon>flowVersiyonlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="flowUygulamalar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="flowUygulamalar.Designer.cs">
+      <DependentUpon>flowUygulamalar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAna.Designer.cs">
+      <DependentUpon>frmAna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAnaEski.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAnaEski.Designer.cs">
+      <DependentUpon>frmAnaEski.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPaketSec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPaketSec.Designer.cs">
+      <DependentUpon>frmPaketSec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUygulama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUygulama.Designer.cs">
+      <DependentUpon>frmUygulama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUygulamaDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUygulamaDuzenle.Designer.cs">
+      <DependentUpon>frmUygulamaDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUygulamaEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUygulamaEkle.Designer.cs">
+      <DependentUpon>frmUygulamaEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVersiyonDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVersiyonDuzenle.Designer.cs">
+      <DependentUpon>frmVersiyonDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVersiyon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVersiyon.Designer.cs">
+      <DependentUpon>frmVersiyon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="flowVersiyonlar.resx">
+      <DependentUpon>flowVersiyonlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="flowUygulamalar.resx">
+      <DependentUpon>flowUygulamalar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAna.resx">
+      <DependentUpon>frmAna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAnaEski.resx">
+      <DependentUpon>frmAnaEski.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPaketSec.resx">
+      <DependentUpon>frmPaketSec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUygulama.resx">
+      <DependentUpon>frmUygulama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUygulamaDuzenle.resx">
+      <DependentUpon>frmUygulamaDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUygulamaEkle.resx">
+      <DependentUpon>frmUygulamaEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVersiyonDuzenle.resx">
+      <DependentUpon>frmVersiyonDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVersiyon.resx">
+      <DependentUpon>frmVersiyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
