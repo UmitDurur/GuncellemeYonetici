@@ -1,0 +1,9 @@
+#Fix Rewrite
+Options -Multiviews
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteBase /GuncellemeYonetici/v1/
+RewriteRule guncelleme/(.*)$ guncelleme.php?request=$1 [QSA,NC,L]
+RewriteRule uygulama/(.*)$ uygulama.php?request=$1 [QSA,NC,L]
+RewriteRule yayinla/(.*)$ yayinla.php?request=$1 [QSA,NC,L]
